@@ -14,4 +14,4 @@ let generate = (numRows) => {
     }
     return pascalsTriangle; // возвращает результат 
 };
-console.log(generate(5));
+console.log(generate(15));
