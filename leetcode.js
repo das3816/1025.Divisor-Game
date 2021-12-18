@@ -2,7 +2,7 @@ let generate = (numRows) => {
     let pascalsTriangle = new Array(numRows); //создает новый массив, который мы будем позже возвращать
 
     for(let i = 0; i < numRows; i++) { //обычный цикл, который проходится по массиву
-        let row = new Array(i + 1); // создает новый пустой массив
+        let row = new Array(i + 1); // создает новый пустой массив, значение которого равняется следующиму числу в массиве
         row[0] = 1; // создает условие, при котором массив будет начинаться с 1, в любом случае
         row[row.length - 1] = 1; // теперь массив будет заканчиваться 1, в любом случае
     
@@ -14,4 +14,4 @@ let generate = (numRows) => {
     }
     return pascalsTriangle; // возвращает результат 
 };
-console.log(generate(15));
+console.log(generate(5));
